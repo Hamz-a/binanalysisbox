@@ -41,6 +41,16 @@ git clone https://github.com/radare/radare2
 cd radare2
 ./sys/install.sh
 
+# Install afl
+cd ~/tools
+wget http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
+tar -zxvf afl-latest.tgz
+rm afl-latest.tgz
+mv afl-* afl
+cd afl
+sudo make install
+
+
 # Hexyl
 # cd ~/tools
 # git clone https://github.com/sharkdp/hexyl
