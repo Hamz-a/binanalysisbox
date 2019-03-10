@@ -50,6 +50,13 @@ mv afl-* afl
 cd afl
 sudo make install
 
+# Install Capstone
+cd ~/tools
+git clone https://github.com/aquynh/capstone
+cd capstone
+./make.sh
+sudo ./make.sh install
+
 
 # Hexyl
 # cd ~/tools
