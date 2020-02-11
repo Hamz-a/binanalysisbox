@@ -20,7 +20,8 @@ sudo apt -y install zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="af-magic"/g' ~/.zshrc
-
+echo export LC_ALL=en_US.UTF-8 >> ~/.zshrc
+echo export LANG=en_US.UTF-8 >> ~/.zshrc
 
 # Install tools
 cd ~
